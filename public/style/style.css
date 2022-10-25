@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===========Global changes========= */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  min-height: 100vh;
+  margin: 0 10rem;
+}
+
+.error {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  z-index: -1;
+  font-size: 40px;
+}
+
+/* =============navbar============ */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  width: 50px;
+}
+
+.navbar {
+  width: 75%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu_list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  text-transform: capitalize;
+}
+
+.toggler {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.toggler_icon {
+  width: 30px;
+  height: 3px;
+  margin-bottom: 3px;
+  background: crimson;
+  border-radius: 10px;
+}

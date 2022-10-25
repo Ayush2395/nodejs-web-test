@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('./partials/head.ejs') %>
-  <body>
-    <!-- navbar -->
-    <%- include('./partials/navbar.ejs') %>
+  <%- include('./components/head.ejs') %>
 
-    <div class="section error_page">
-      <h1 class="display">Page not found!...</h1>
-    </div>
-    <%- include('./partials/footer.ejs') %>
+  <body>
+    <%- include('./components/navbar.ejs') %>
+    <section class="section error" id="error">
+      <h1>
+        Oops!... Page not found. <i class="fa-regular fa-face-sad-cry"></i>
+      </h1>
+    </section>
   </body>
 </html>

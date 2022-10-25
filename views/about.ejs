@@ -1,26 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('./partials/head.ejs') %>
-
+  <%- include('./components/head.ejs') %>
   <body>
-    <!-- navbar -->
-    <%- include('./partials/navbar.ejs') %>
-
-    <section class="section about_section" id="about">
-      <div class="main grid">
-        <div class="col-1">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum,
-            ipsam eveniet numquam deleniti tempore cum qui, ex voluptatem
-            temporibus excepturi magni magnam. Rem illo, mollitia dolorem
-            quisquam ex et necessitatibus!
-          </p>
-        </div>
-        <div class="col-2">
-          <h1 class="dispay">About me</h1>
-        </div>
-      </div>
+    <%- include('./components/navbar.ejs') %>
+    <section class="section" id="home">
+      <h1>About page</h1>
     </section>
-    <%- include('./partials/footer.ejs') %>
   </body>
 </html>
