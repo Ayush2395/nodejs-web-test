@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <!-- navbar component -->
+    <%- include ('./partials/navbar.ejs') %>
+
+    <!-- home section -->
+    <section class="section home_section">
+      <div class="main grid">
+        <div class="col">
+          <h1 class="display">I have</h1>
+          <h1 class="display">design</h1>
+          <h1 class="display">experience</h1>
+          <p class="intro">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            quam odio enim explicabo obcaecati saepe!
+          </p>
+        </div>
+        <div class="col-2">
+          <h1 class="display">Image element</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog section -->
+    <section class="section blog_section" id="blogs">
+      <div class="main">
+        <h1 class="display">Blog post</h1>
+        <div class="grid card">
+          <% if(blog.length > 0) { %> <% blog.map(blogItem=>{ %>
+          <div class="card-body">
+            <h1><%= blogItem.title %></h1>
+            <p><%= blogItem.snippet %></p>
+          </div>
+          <% }) %> <% } %>
+        </div>
+      </div>
+    </section>
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>
